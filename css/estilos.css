@@ -1,0 +1,234 @@
+/* --- Estilos Generales --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding-top: 56px; /* Ajuste para navbar fixed-top */
+    background-color: #f8f9fa;
+    overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+/* --- Navegación --- */
+.navbar {
+    border-bottom: 3px solid #007bff; /* Línea azul bajo la navbar */
+}
+.nav-link {
+    font-weight: 500;
+}
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+/* --- Sección Principal (Hero) --- */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 90vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000; 
+  overflow: hidden;
+}
+
+/* Carrusel principal */
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Imagen del carrusel */
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  background: radial-gradient(circle, #000 50%, #111 100%);
+  display: block;
+  transition: transform 0.8s ease;
+}
+
+/* Pequeño efecto de zoom cuando la imagen está activa */
+.carousel-item.active .carousel-img {
+  transform: scale(1.02);
+}
+
+/* Contenido sobre el carrusel (Texto + Botón) */
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 10; 
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1), 0px 0px 5px rgba(0, 0, 0, 0.8); 
+    background: none; 
+}
+
+/* Media Queries para Hero Section */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 70vh;
+  }
+  .overlay-content {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .overlay-content h1 {
+    font-size: 2rem;
+  }
+}
+
+/* --- Tipografía y botones globales --- */
+.display-4 {
+    font-weight: 300 !important;
+}
+.custom-btn-cta {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.custom-btn-cta:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* --- Tarjetas de Productos --- */
+.product-card {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+.card-img-responsive {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.card-body {
+    padding: 20px;
+}
+
+/* --- Botones de WhatsApp --- */
+.custom-whatsapp-btn { /* Botón grande del checkout */
+    background-color: #25D366 !important;
+    border-color: #25D366 !important;
+    color: white !important;
+}
+.custom-whatsapp-btn:hover {
+    background-color: #128C7E !important;
+    border-color: #128C7E !important;
+    color: white !important;
+}
+
+.custom-whatsapp-btn-sm { /* NUEVO: Botón 'Consultar' en cada tarjeta */
+    background-color: #25D366 !important;
+    border-color: #25D366 !important;
+    color: white !important;
+    font-size: 0.85rem;
+    padding: 6px 10px;
+}
+.custom-whatsapp-btn-sm:hover {
+    background-color: #128C7E !important;
+    border-color: #128C7E !important;
+    color: white !important;
+}
+
+/* --- Sección Ubicación (Mapa) --- */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Mantiene proporción 16:9 */
+    position: relative;
+    height: 0;
+    border-radius: 8px;
+}
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 8px;
+}
+
+/* --- Botón Flotante de WhatsApp (Original) --- */
+.floating-whatsapp-btn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.floating-whatsapp-btn:hover {
+    color: #FFF;
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+
+/* === NUEVO: CARRITO FLOTANTE EN ESQUINA DERECHA === */
+#carrito-flotante {
+    position: fixed;
+    top: 80px; /* Debajo de la navbar */
+    right: 20px;
+    width: 100%;
+    max-width: 350px; /* Ancho reducido como pediste */
+    z-index: 900; /* Justo debajo del botón flotante (1000) */
+    border-radius: 8px;
+    border: 1px solid #f3f0f0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background-color: #111;
+    transition: all 0.3s ease;
+    display: none; /* <-- ESTO LO OCULTA INICIALMENTE */
+}
+/* ... el resto de media queries de #carrito-flotante quedan igual ... */
+
+/* El contenido del card */
+#carrito-flotante .card-body {
+    padding: 15px;
+}
+
+/* Items del carrito (pequeños) */
+#carrito-flotante .list-group-item {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+}
+
+/* En dispositivos móviles, lo ocultamos para que no tape todo */
+@media (max-width: 992px) {
+    #carrito-flotante {
+        max-width: 300px;
+        top: auto; /* Se quita de arriba */
+        bottom: 90px; /* Se pone justo arriba del botón flotante */
+        right: 15px;
+        width: 90%;
+        max-height: 50vh;
+        overflow-y: auto; /* Scroll si hay muchos items */
+    }
+}
+
+/* Eliminamos la regla anterior que hacía el carrito pegajoso */
+.sticky-top-custom { 
+    position: static;
+    top: auto;
+    z-index: auto; 
+}

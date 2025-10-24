@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LU|CAS Indumentaria - Boxers, Slips, Medias y Térmica en Lanús Este</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/estilos.css"> 
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">LU|CAS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero-section d-flex align-items-center text-white text-center position-relative">
+        
+        <div id="productCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="multimedia/kalvin.jpg" class="d-block w-100 carousel-img" alt="Promoción Boxers Calvin">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="multimedia/2.png" class="d-block w-100 carousel-img" alt="Promoción Ropa Térmica">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="multimedia/medias.jpg" class="d-block w-100 carousel-img" alt="Variedad Medias">
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <div class="container overlay-content"> 
+            <h1 class="display-4 fw-light">Comodidad y Calidad para toda la Familia</h1>
+            <p class="lead mb-4">La mejor indumentaria interior masculina y familiar en Lanús Este.</p>
+            <a href="#productos" class="btn btn-primary btn-lg custom-btn-cta shadow-lg">Ver Colección</a>
+        </div>
+    </header>
+    
+    <section id="productos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 text-dark">Nuestro Productos</h2>
+            
+            <div class="row justify-content-center">
+                
+                <h3 class="text-secondary col-12 mt-4 mb-3 border-top pt-4 text-center">Boxers Premium (Adultos y Jóvenes)</h3>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="multimedia/kalvin.jpg" class="card-img-top card-img-responsive" alt="Boxer Kalvin Klein">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Boxer Kalvin Klein</h5>
+                            <p class="card-text text-muted small">Algodón premium. Máximo confort.</p>
+                            <div class="mt-auto pt-3">
+                                <h4 class="text-dark mb-3">$7.000 / $19.000 x3</h4>
+                                <div class="mb-2">
+                                    <select class="form-select form-select-sm d-inline-block w-auto me-2" id="talle-boxer-kalvin">
+                                        <option value="" selected disabled>Talle</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="boxer-kalvin-1" data-talle-id="talle-boxer-kalvin">Agregar x1</button>
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="boxer-kalvin-3" data-talle-id="talle-boxer-kalvin">Agregar x3</button>
+                                    <a href="https://wa.me/5491125982119?text=Hola,%20me%20interesa%20consultar%20por%20el%20Boxer%20Kalvin%20Klein." 
+                                        target="_blank" class="btn btn-success btn-block w-100 fw-bold custom-whatsapp-btn-sm mt-2">
+                                        <i class="fab fa-whatsapp"></i> Consultar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="multimedia/kalvin.jpg" class="card-img-top card-img-responsive" alt="Boxer Tommy">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Boxer Tommy</h5>
+                            <p class="card-text text-muted small">Corte clásico, elástico reforzado.</p>
+                            <div class="mt-auto pt-3">
+                                <h4 class="text-dark mb-3">$7.000 / $19.000 x3</h4>
+                                <div class="mb-2">
+                                    <select class="form-select form-select-sm d-inline-block w-auto me-2" id="talle-boxer-tommy">
+                                        <option value="" selected disabled>Talle</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="boxer-tommy-1" data-talle-id="talle-boxer-tommy">Agregar x1</button>
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="boxer-tommy-3" data-talle-id="talle-boxer-tommy">Agregar x3</button>
+                                    <a href="https://wa.me/5491125982119?text=Hola,%20me%20interesa%20consultar%20por%20el%20Boxer%20Tommy." 
+                                        target="_blank" class="btn btn-success btn-block w-100 fw-bold custom-whatsapp-btn-sm mt-2">
+                                        <i class="fab fa-whatsapp"></i> Consultar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="multimedia/kalvin.jpg" class="card-img-top card-img-responsive" alt="Boxer Lacoste">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Boxer Lacoste</h5>
+                            <p class="card-text text-muted small">Diseño juvenil, tela transpirable.</p>
+                            <div class="mt-auto pt-3">
+                                <h4 class="text-dark mb-3">$7.000 / $19.000 x3</h4>
+                                <div class="mb-2">
+                                    <select class="form-select form-select-sm d-inline-block w-auto me-2" id="talle-boxer-lacoste">
+                                        <option value="" selected disabled>Talle</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="boxer-lacoste-1" data-talle-id="talle-boxer-lacoste">Agregar x1</button>
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="boxer-lacoste-3" data-talle-id="talle-boxer-lacoste">Agregar x3</button>
+                                    <a href="https://wa.me/5491125982119?text=Hola,%20me%20interesa%20consultar%20por%20el%20Boxer%20Lacoste." 
+                                        target="_blank" class="btn btn-success btn-block w-100 fw-bold custom-whatsapp-btn-sm mt-2">
+                                        <i class="fab fa-whatsapp"></i> Consultar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-secondary col-12 mt-4 mb-3 border-top pt-4 text-center">Boxers Nacionales (Otras Marcas)</h3>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="multimedia/boxer.png" class="card-img-top card-img-responsive" alt="Boxer UOMO">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Boxer UOMO</h5>
+                            <p class="card-text text-muted small">Secado rápido, ideal para deporte.</p>
+                            <div class="mt-auto pt-3">
+                                <h4 class="text-dark mb-3">$4.000 / $10.000 x3</h4>
+                                <div class="mb-2">
+                                    <select class="form-select form-select-sm d-inline-block w-auto me-2" id="talle-boxer-uomo">
+                                        <option value="" selected disabled>Talle</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="boxer-uomo-1" data-talle-id="talle-boxer-uomo">Agregar x1</button>
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="boxer-uomo-3" data-talle-id="talle-boxer-uomo">Agregar x3</button>
+                                    <a href="https://wa.me/5491125982119?text=Hola,%20me%20interesa%20consultar%20por%20el%20Boxer%20UOMO." 
+                                        target="_blank" class="btn btn-success btn-block w-100 fw-bold custom-whatsapp-btn-sm mt-2">
+                                        <i class="fab fa-whatsapp"></i> Consultar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="multimedia/boxer.png" class="card-img-top card-img-responsive" alt="Boxer DUFOUR">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Boxer DUFOUR</h5>
+                            <p class="card-text text-muted small">Clásico de microfibra.</p>
+                            <div class="mt-auto pt-3">
+                                <h4 class="text-dark mb-3">$4.500</h4>
+                                <div class="mb-2">
+                                    <select class="form-select form-select-sm d-inline-block w-auto me-2" id="talle-boxer-dufour">
+                                        <option value="" selected disabled>Talle</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="boxer-dufour" data-talle-id="talle-boxer-dufour">Agregar x1</button>
+                                    <a href="https://wa.me/5491125982119?text=Hola,%20me%20interesa%20consultar%20por%20el%20Boxer%20DUFOUR." 
+                                        target="_blank" class="btn btn-success btn-block w-100 fw-bold custom-whatsapp-btn-sm mt-2">
+                                        <i class="fab fa-whatsapp"></i> Consultar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="multimedia/boxer.png" class="card-img-top card-img-responsive" alt="Boxer LODY">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Boxer LODY</h5>
+                            <p class="card-text text-muted small">100% Algodón, colores surtidos.</p>
+                            <div class="mt-auto pt-3">
+                                <h4 class="text-dark mb-3">$4.500</h4>
+                                <div class="mb-2">
+                                    <select class="form-select form-select-sm d-inline-block w-auto me-2" id="talle-boxer-lody">
+                                        <option value="" selected disabled>Talle</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="boxer-lody" data-talle-id="talle-boxer-lody">Agregar x1</button>
+                                    <a href="https://wa.me/5491125982119?text=Hola,%20me%20interesa%20consultar%20por%20el%20Boxer%20LODY." 
+                                        target="_blank" class="btn btn-success btn-block w-100 fw-bold custom-whatsapp-btn-sm mt-2">
+                                        <i class="fab fa-whatsapp"></i> Consultar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="multimedia/boxer.png" class="card-img-top card-img-responsive" alt="Boxer CAPICUA">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Boxer CAPICUA</h5>
+                            <p class="card-text text-muted small">Confort y durabilidad.</p>
+                            <div class="mt-auto pt-3">
+                                <h4 class="text-dark mb-3">$5.000</h4>
+                                <div class="mb-2">
+                                    <select class="form-select form-select-sm d-inline-block w-auto me-2" id="talle-boxer-capicua">
+                                        <option value="" selected disabled>Talle</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="boxer-capicua" data-talle-id="talle-boxer-capicua">Agregar x1</button>
+                                    <a href="https://wa.me/5491125982119?text=Hola,%20me%20interesa%20consultar%20por%20el%20Boxer%20CAPICUA." 
+                                        target="_blank" class="btn btn-success btn-block w-100 fw-bold custom-whatsapp-btn-sm mt-2">
+                                        <i class="fab fa-whatsapp"></i> Consultar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-secondary col-12 mt-4 mb-3 border-top pt-4 text-center">Slips y Medias (Niños y Adultos)</h3>
+
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="multimedia/boxer1.png" class="card-img-top card-img-responsive" alt="Slip Infantil">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Slips</h5>
+                            <p class="card-text text-muted small">Juvenil,Adulto y niños | 100% Algodón.</p>
+                            <div class="mt-auto pt-3">
+                                <h4 class="text-dark mb-3">Adultos $3.500 | Juvenil $1.500</h4>
+                                <div class="mb-2">
+                                    <select class="form-select form-select-sm d-inline-block w-auto me-2" id="talle-slip">
+                                        <option value="" selected disabled>Talle</option>
+                                        <option value="4-6">4-6 (Niño)</option>
+                                        <option value="8-10">8-10 (Niño)</option>
+                                        <option value="12-14">12-14 (Juvenil)</option>
+                                        <option value="S">S (Adulto)</option>
+                                        <option value="M">M (Adulto)</option>
+                                        <option value="L">L (Adulto)</option>
+                                        <option value="XL">XL (Adulto)</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="slip-adulto" data-talle-id="talle-slip">Agregar Slip Adulto</button>
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="slip-juvenil" data-talle-id="talle-slip">Agregar Slip Juvenil</button>
+                                    <a href="https://wa.me/5491125982119?text=Hola,%20me%20interesa%20consultar%20por%20los%20Slips." 
+                                        target="_blank" class="btn btn-success btn-block w-100 fw-bold custom-whatsapp-btn-sm mt-2">
+                                        <i class="fab fa-whatsapp"></i> Consultar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="multimedia/medias.jpg" class="card-img-top card-img-responsive" alt="Pack Medias">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Medias 3/4 y más</h5>
+                            <p class="card-text text-muted small">Adultos, Jóvenes y niños | Deportivo, lisos, estampas.</p>
+                            <div class="mt-auto pt-3">
+                                <h4 class="text-dark mb-3">Desde $2.500 el par</h4>
+                                <div class="mb-2">
+                                    <select class="form-select form-select-sm d-inline-block w-auto me-2" id="talle-media">
+                                        <option value="" selected disabled>Talle</option>
+                                        <option value="20-24">20-24 (Niño)</option>
+                                        <option value="25-30">25-30 (Niño)</option>
+                                        <option value="31-35">31-35 (Juvenil)</option>
+                                        <option value="36-40">36-40 (Adulto)</option>
+                                        <option value="41-45">41-45 (Adulto)</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="media-par" data-talle-id="talle-media">Agregar 1 Par ($2.500)</button>
+                                    <a href="https://wa.me/5491125982119?text=Hola,%20me%20interesa%20consultar%20por%20las%20medias." 
+                                        target="_blank" class="btn btn-success btn-block w-100 fw-bold custom-whatsapp-btn-sm mt-2">
+                                        <i class="fab fa-whatsapp"></i> Consultar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-secondary col-12 mt-4 mb-3 border-top pt-4 text-center">Ropa Térmica y Pijamas</h3>
+
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="multimedia/2.png" class="card-img-top card-img-responsive" alt="Ropa Térmica Adulto">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Ropa Térmica</h5>
+                            <p class="card-text text-muted small">Máxima protección contra el frío.</p>
+                            <p class="card-text text-danger small">Conjunto no disponible para adulto, solo remeras.</p>
+                            <div class="mt-auto pt-3">
+                                <h4 class="text-dark mb-3">Conjunto Juvenil $15.000 | Remera $10.000</h4>
+                                <div class="mb-2">
+                                    <select class="form-select form-select-sm d-inline-block w-auto me-2" id="talle-termica">
+                                        <option value="" selected disabled>Talle</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="termica-conjunto-juv" data-talle-id="talle-termica">Agregar Conjunto Juvenil</button>
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="termica-remera" data-talle-id="talle-termica">Agregar Remera Térmica</button>
+                                    <a href="https://wa.me/5491125982119?text=Hola,%20me%20interesa%20consultar%20por%20la%20ropa%20térmica." 
+                                        target="_blank" class="btn btn-success btn-block w-100 fw-bold custom-whatsapp-btn-sm mt-2">
+                                        <i class="fab fa-whatsapp"></i> Consultar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="multimedia/1.png" class="card-img-top card-img-responsive" alt="Pijama Hombre">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Pijamas</h5>
+                            <p class="card-text text-muted small">Niños y Adultos | Calidez y estilo para el hogar.</p>
+                            <div class="mt-auto pt-3">
+                                <h4 class="text-dark mb-3">Niños $15.000 | Adultos $15.000</h4>
+                                <div class="mb-2">
+                                    <select class="form-select form-select-sm d-inline-block w-auto me-2" id="talle-pijama">
+                                        <option value="" selected disabled>Talle</option>
+                                        <option value="4">4 (Niño)</option>
+                                        <option value="6">6 (Niño)</option>
+                                        <option value="8">8 (Niño)</option>
+                                        <option value="10">10 (Niño)</option>
+                                        <option value="12">12 (Niño)</option>
+                                        <option value="S">S (Adulto)</option>
+                                        <option value="M">M (Adulto)</option>
+                                        <option value="L">L (Adulto)</option>
+                                        <option value="XL">XL (Adulto)</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="pijama-nino" data-talle-id="talle-pijama">Agregar Pijama Niño</button>
+                                    <button class="btn btn-sm btn-primary btn-agregar" data-id="pijama-adulto" data-talle-id="talle-pijama">Agregar Pijama Adulto</button>
+                                    <a href="https://wa.me/5491125982119?text=Hola,%20me%20interesa%20consultar%20por%20los%20Pijamas." 
+                                        target="_blank" class="btn btn-success btn-block w-100 fw-bold custom-whatsapp-btn-sm mt-2">
+                                        <i class="fab fa-whatsapp"></i> Consultar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="ubicacion" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5 text-dark">Encontranos en Lanús Este</h2>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h3 class="text-primary mb-3">LU|CAS en Galería Palazzello</h3>
+                    <p class="lead">📍 O'Higgins 2064, Lanús Este, GBA.</p>
+                    <p>Te esperamos de Lunes a Sábado de 9:00 a 19:00 hs. La mejor atención personalizada y calidad en indumentaria interior.</p>
+                    
+                    <a href="https://www.google.com/maps/search/?api=1&query=O'Higgins+2064+Lanus+Este" 
+                        target="_blank" class="btn btn-outline-dark mt-3">
+                        <i class="fas fa-location-arrow"></i> Cómo Llegar (Google Maps)
+                    </a>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="map-responsive shadow-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.483984852085!2d-58.39864292376999!3d-34.70887166547672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd1552554e2f%3A0xc6c4f4d2f8319f39!2zTydIaWdnaW5zIDIwNjQsIEIxODI0QURYIExhbsO6cyBFc3RlLCBQcm92aW5jaWEgZGUgQnVlbm9zIEFpcmVz!5e0!3m2!1ses-419!2sar!4v1709228834419!5m2!1ses-419!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="bg-dark text-white-50 py-4 border-top border-secondary">
+        <div class="container text-center">
+            <p class="mb-2 fw-bold text-white">LU|CAS Indumentaria | Lanús Este</p>
+            <p class="small mb-2">Horario: Lunes a Sábados 9 a 19hs.</p>
+
+            <p class="small mb-1"><i class="fab fa-whatsapp me-2"></i> 
+                <a href="https://wa.me/5491125982119" target="_blank" class="text-white-50">11 2598 2119</a>
+            </p>
+            <p class="small mb-4"><i class="fab fa-instagram me-2"></i> 
+                <a href="https://www.instagram.com/lucasboxers" target="_blank" class="text-white-50">@lucasboxers</a>
+            </p>
+            
+            <p class="mb-0 small text-white-50">© 2025 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5491125982119?text=Hola." 
+        target="_blank" class="floating-whatsapp-btn shadow-lg">
+        <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
+    
+    <div id="carrito-flotante" class="shadow-lg border-0 bg-white">
+        <div class="card-body">
+            <h5 class="card-title text-center text-primary mb-3">🛒 Pre-Orden</h5>
+            <ul id="carrito-items" class="list-group list-group-flush mb-3">
+                <li class="list-group-item text-center text-muted small">Aún no agregaste productos.</li>
+            </ul>
+            <h4 class="text-end fw-bold mb-3">TOTAL: <span id="total-compra">$0</span></h4>
+            <div id="checkout-container" style="display: none;">
+                <a id="whatsapp-checkout" href="https://wa.me/5491125982119" target="_blank" class="btn btn-success btn-block w-100 fw-bold custom-whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Finalizar Pedido y Consultar
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // La lista de productos no necesita cambios, solo se usará su ID.
+            const productos = [
+                // Boxers Marcas Premium
+                { id: 'boxer-kalvin-1', nombre: 'Boxer Kalvin Klein (1U)', precio: 7000, texto_boton: 'Agregar 1U' },
+                { id: 'boxer-kalvin-3', nombre: 'Boxer Kalvin Klein (3U)', precio: 19000, texto_boton: 'Agregar x3' },
+                { id: 'boxer-tommy-1', nombre: 'Boxer Tommy (x1)', precio: 7000, texto_boton: 'Agregar x1' },
+                { id: 'boxer-tommy-3', nombre: 'Boxer Tommy (x3)', precio: 19000, texto_boton: 'Agregar x3' },
+                { id: 'boxer-lacoste-1', nombre: 'Boxer Lacoste (x1)', precio: 7000, texto_boton: 'Agregar x1' },
+                { id: 'boxer-lacoste-3', nombre: 'Boxer Lacoste (x3)', precio: 19000, texto_boton: 'Agregar x3' },
+
+                // Boxers Marcas Nacionales
+                { id: 'boxer-uomo-1', nombre: 'Boxer UOMO (x1)', precio: 4000, texto_boton: 'Agregar x1' },
+                { id: 'boxer-uomo-3', nombre: 'Boxer UOMO (x3)', precio: 10000, texto_boton: 'Agregar x3' },
+                { id: 'boxer-dufour', nombre: 'Boxer DUFOUR', precio: 4500, texto_boton: 'Agregar x1' },
+                { id: 'boxer-lody', nombre: 'Boxer LODY', precio: 4500, texto_boton: 'Agregar x1' },
+                { id: 'boxer-capicua', nombre: 'Boxer CAPICUA', precio: 5000, texto_boton: 'Agregar x1' },
+
+                // Otros Productos
+                { id: 'slip-adulto', nombre: 'Slip Adulto', precio: 3500, texto_boton: 'Agregar Slip Adulto' },
+                { id: 'slip-juvenil', nombre: 'Slip Juvenil', precio: 1500, texto_boton: 'Agregar Slip Juvenil' },
+                { id: 'media-par', nombre: 'Par de Medias', precio: 2500, texto_boton: 'Agregar 1 Par ($2.500)' },
+                { id: 'termica-conjunto-juv', nombre: 'Conjunto Térmico Juvenil', precio: 15000, texto_boton: 'Agregar Conjunto Juvenil' },
+                { id: 'termica-remera', nombre: 'Remera Térmica (Adulto)', precio: 10000, texto_boton: 'Agregar Remera Térmica' },
+                { id: 'pijama-nino', nombre: 'Pijama de Niño', precio: 15000, texto_boton: 'Agregar Pijama Niño' },
+                { id: 'pijama-adulto', nombre: 'Pijama de Adulto', precio: 15000, texto_boton: 'Agregar Pijama Adulto' },
+            ];
+
+            /**
+             * El carrito ahora contiene un objeto con la forma:
+             * { idUnico: { id: string, nombre: string, precio: number, cantidad: number, talle: string } }
+             * Usaremos una clave única `id-talle` para distinguir productos iguales con diferente talle.
+             */
+            let carrito = {}; 
+            let codigoOrden = ''; 
+            
+            const carritoFlotante = document.getElementById('carrito-flotante');
+            const totalElement = document.getElementById('total-compra');
+            const itemsListElement = document.getElementById('carrito-items');
+            const whatsappLinkElement = document.getElementById('whatsapp-checkout');
+            const checkoutContainer = document.getElementById('checkout-container');
+
+            const generarCodigoOrden = () => {
+                const now = new Date();
+                const dia = String(now.getDate()).padStart(2, '0');
+                const mes = String(now.getMonth() + 1).padStart(2, '0');
+                const random = Math.random().toString(36).substring(2, 5).toUpperCase(); 
+                return `LUCAS-${dia}${mes}-${random}`;
+            };
+
+            const formatoPrecio = (precio) => `$${precio.toLocaleString('es-AR')}`;
+
+            // FUNCIÓN ACTUALIZADA
+            const actualizarCarrito = (id, talle, cantidad) => {
+                const productoEncontrado = productos.find(p => p.id === id);
+                if (!productoEncontrado) return;
+                
+                // Generar una clave única combinando id y talle
+                const claveUnica = talle ? `${id}_${talle}` : id;
+
+                let item = carrito[claveUnica];
+
+                // Si es el primer ítem, genera el código
+                if (Object.keys(carrito).length === 0 && cantidad > 0) {
+                    codigoOrden = generarCodigoOrden();
+                }
+
+                if (item) {
+                    if (cantidad === -Infinity) {
+                        // Eliminar completamente
+                        delete carrito[claveUnica];
+                    } else {
+                        // Actualizar cantidad
+                        item.cantidad += cantidad;
+                        if (item.cantidad <= 0) {
+                            delete carrito[claveUnica];
+                        }
+                    }
+                } else if (cantidad > 0) {
+                    // Agregar nuevo ítem
+                    carrito[claveUnica] = { ...productoEncontrado, cantidad, talle };
+                }
+
+                // Si el carrito queda vacío, resetea el código
+                if (Object.keys(carrito).length === 0) {
+                    codigoOrden = '';
+                }
+
+                renderizarCarrito();
+            };
+
+            // FUNCIÓN ACTUALIZADA
+            const renderizarCarrito = () => {
+                let total = 0;
+                let mensajeWhatsapp = `Hola LU|CAS, quiero comprar los siguientes productos,(Código: ${codigoOrden}):\n\n`;
+
+                itemsListElement.innerHTML = '';
+                const carritoArray = Object.values(carrito);
+
+                if (carritoArray.length === 0) {
+                    itemsListElement.innerHTML = '<li class="list-group-item text-center text-muted small">Aún no agregaste productos.</li>';
+                    mensajeWhatsapp = "Hola LU|CAS, me gustaría consultar por varios productos.";
+                    carritoFlotante.style.display = 'none';
+                    checkoutContainer.style.display = 'none'; // Ocultar el botón de finalizar
+                } else {
+                    carritoFlotante.style.display = 'block';
+                    checkoutContainer.style.display = 'block'; // Mostrar el botón de finalizar
+
+                    // Actualizar título con código de orden
+                    const tituloCarrito = document.querySelector('#carrito-flotante .card-title');
+                    if(tituloCarrito) {
+                        tituloCarrito.innerHTML = `🛒 Tu Pre-Orden <span class="badge bg-primary">${codigoOrden}</span>`;
+                    }
+
+                    carritoArray.forEach(item => {
+                        const subtotal = item.precio * item.cantidad;
+                        total += subtotal;
+
+                        // Incluir el talle en el nombre si existe
+                        const nombreConTalle = item.talle ? `${item.nombre} (Talle: ${item.talle})` : item.nombre;
+                        
+                        mensajeWhatsapp += `${item.cantidad} x ${nombreConTalle} = ${formatoPrecio(subtotal)}\n`;
+
+                        // Crear el elemento de la lista para el HTML
+                        const li = document.createElement('li');
+                        li.className = 'list-group-item d-flex justify-content-between align-items-center small p-2';
+                        // Usamos la clave única para el data-id del botón de eliminar
+                        const claveUnica = item.talle ? `${item.id}_${item.talle}` : item.id;
+
+                        li.innerHTML = `
+                            <span>${item.cantidad}x ${nombreConTalle}</span>
+                            <div>
+                                <span class="fw-bold text-dark">${formatoPrecio(subtotal)}</span>
+                                <button class="btn btn-sm btn-outline-danger ms-2 p-1 btn-eliminar" data-id="${claveUnica}" title="Eliminar">
+                                    <i class="fas fa-trash-alt" data-id="${claveUnica}"></i>
+                                </button>
+                            </div>
+                        `;
+                        itemsListElement.appendChild(li);
+                    });
+                    
+                    mensajeWhatsapp += `\n*TOTAL: ${formatoPrecio(total)}*`;
+                }
+
+                totalElement.textContent = formatoPrecio(total);
+                whatsappLinkElement.href = `https://wa.me/5491125982119?text=${encodeURIComponent(mensajeWhatsapp)}`;
+            };
+
+            // Listener para los botones de agregar
+            document.querySelectorAll('.btn-agregar').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const id = e.currentTarget.dataset.id;
+                    const talleId = e.currentTarget.dataset.talleId; // ID del select de talle
+                    
+                    let talle = '';
+                    if (talleId) {
+                        const selectElement = document.getElementById(talleId);
+                        talle = selectElement.value;
+                        
+                        // Validar que se haya seleccionado un talle
+                        if (!talle) {
+                            alert('Por favor, selecciona un talle.');
+                            return;
+                        }
+                    }
+
+                    actualizarCarrito(id, talle, 1);
+                });
+            });
+
+            // Listener para el botón de eliminar del carrito (delegación de eventos)
+            itemsListElement.addEventListener('click', (e) => {
+                const eliminarButton = e.target.closest('.btn-eliminar');
+                if (eliminarButton) {
+                    const claveUnica = eliminarButton.dataset.id;
+                    // Enviar -Infinity para eliminar el ítem completo
+                    const partes = claveUnica.split('_');
+                    const id = partes[0];
+                    const talle = partes[1] || '';
+
+                    actualizarCarrito(id, talle, -Infinity); 
+                }
+            });
+
+            // Inicializar renderizado
+            renderizarCarrito();
+        });
+    </script>
+    </body>
+</html>
